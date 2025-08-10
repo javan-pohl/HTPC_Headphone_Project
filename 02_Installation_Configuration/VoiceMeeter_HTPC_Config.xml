@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- VoiceMeeter Banana Configuration for HTPC 5.1.2 Setup -->
+<!-- Load this file via: Menu -> Load Settings in VoiceMeeter -->
+<VoiceMeeterConfig version="2.0">
+  <BusMode>2</BusMode> <!-- Banana mode -->
+  
+  <!-- CRITICAL: Enable Patch Insert for 32-channel ASIO -->
+  <PatchInsert>1</PatchInsert>
+  
+  <!-- Input Configuration -->
+  <!-- VAIO (Virtual Input) - This is where Kodi will send 8-channel audio -->
+  <InputStrip1>
+    <Name>VAIO - Kodi Input</Name>
+    <Solo>0</Solo>
+    <Mute>0</Mute>
+    <Gain>0.0</Gain>
+    <GainLayer1>0.0</GainLayer1>
+    <GainLayer2>0.0</GainLayer2>
+    <GainLayer3>0.0</GainLayer3>
+    <GainLayer4>0.0</GainLayer4>
+    <GainLayer5>0.0</GainLayer5>
+    <GainLayer6>0.0</GainLayer6>
+    <GainLayer7>0.0</GainLayer7>
+    <GainLayer8>0.0</GainLayer8>
+    <BusA1>1</BusA1> <!-- Route to A1 for monitoring -->
+    <BusA2>0</BusA2>
+    <BusA3>0</BusA3>
+    <BusB1>0</BusB1>
+    <BusB2>0</BusB2>
+  </InputStrip1>
+  
+  <!-- Hardware Input 1 (Optional - for microphone) -->
+  <InputStrip2>
+    <Name>Hardware In 1</Name>
+    <Solo>0</Solo>
+    <Mute>1</Mute> <!-- Muted by default -->
+    <Gain>0.0</Gain>
+    <BusA1>0</BusA1>
+    <BusA2>0</BusA2>
+    <BusA3>0</BusA3>
+    <BusB1>0</BusB1>
+    <BusB2>0</BusB2>
+  </InputStrip2>
+  
+  <!-- Hardware Input 2 (Optional) -->
+  <InputStrip3>
+    <Name>Hardware In 2</Name>
+    <Solo>0</Solo>
+    <Mute>1</Mute> <!-- Muted by default -->
+    <Gain>0.0</Gain>
+    <BusA1>0</BusA1>
+    <BusA2>0</BusA2>
+    <BusA3>0</BusA3>
+    <BusB1>0</BusB1>
+    <BusB2>0</BusB2>
+  </InputStrip3>
+  
+  <!-- Virtual Input 1 (AUX) -->
+  <InputStrip4>
+    <Name>AUX Virtual</Name>
+    <Solo>0</Solo>
+    <Mute>1</Mute> <!-- Muted by default -->
+    <Gain>0.0</Gain>
+    <BusA1>0</BusA1>
+    <BusA2>0</BusA2>
+    <BusA3>0</BusA3>
+    <BusB1>0</BusB1>
+    <BusB2>0</BusB2>
+  </InputStrip4>
+  
+  <!-- Virtual Input 2 (VAIO3) -->
+  <InputStrip5>
+    <Name>VAIO3 Virtual</Name>
+    <Solo>0</Solo>
+    <Mute>1</Mute> <!-- Muted by default -->
+    <Gain>0.0</Gain>
+    <BusA1>0</BusA1>
+    <BusA2>0</BusA2>
+    <BusA3>0</BusA3>
+    <BusB1>0</BusB1>
+    <BusB2>0</BusB2>
+  </InputStrip5>
+  
+  <!-- Output Configuration -->
+  <!-- A1: Physical speakers/headphones (for monitoring) -->
+  <OutputBusA1>
+    <Name>A1 - Monitors</Name>
+    <Gain>0.0</Gain>
+    <Mute>0</Mute>
+    <Solo>0</Solo>
+    <Device>WDM</Device> <!-- Will use default Windows device -->
+    <DeviceName></DeviceName> <!-- Auto-detect -->
+  </OutputBusA1>
+  
+  <!-- A2: Unused -->
+  <OutputBusA2>
+    <Name>A2 - Unused</Name>
+    <Gain>0.0</Gain>
+    <Mute>1</Mute>
+    <Solo>0</Solo>
+    <Device>WDM</Device>
+    <DeviceName></DeviceName>
+  </OutputBusA2>
+  
+  <!-- A3: Unused -->
+  <OutputBusA3>
+    <Name>A3 - Unused</Name>
+    <Gain>0.0</Gain>
+    <Mute>1</Mute>
+    <Solo>0</Solo>
+    <Device>WDM</Device>
+    <DeviceName></DeviceName>
+  </OutputBusA3>
+  
+  <!-- Virtual Outputs -->
+  <OutputBusB1>
+    <Name>B1 - Virtual Out</Name>
+    <Gain>0.0</Gain>
+    <Mute>1</Mute>
+    <Solo>0</Solo>
+  </OutputBusB1>
+  
+  <OutputBusB2>
+    <Name>B2 - Virtual Out</Name>
+    <Gain>0.0</Gain>
+    <Mute>1</Mute>
+    <Solo>0</Solo>
+  </OutputBusB2>
+  
+  <!-- System Settings -->
+  <SystemSettings>
+    <SampleRate>48000</SampleRate>
+    <BufferSize>512</BufferSize>
+    <PreferredMainSampleRate>48000</PreferredMainSampleRate>
+    <WDMInputExclusiveMode>1</WDMInputExclusiveMode>
+    <WDMOutputExclusiveMode>0</WDMOutputExclusiveMode>
+    <ASIOBufferSize>512</ASIOBufferSize>
+    <KSPrimaryOutput>0</KSPrimaryOutput>
+    <MMEBufferSize>512</MMEBufferSize>
+    <DirectXInputLatency>512</DirectXInputLatency>
+    <DirectXOutputLatency>512</DirectXOutputLatency>
+  </SystemSettings>
+  
+  <!-- Recording Settings -->
+  <RecorderSettings>
+    <SampleRate>48000</SampleRate>
+    <BitDepth>24</BitDepth>
+    <FileFormat>WAV</FileFormat>
+    <RecorderMode>0</RecorderMode>
+  </RecorderSettings>
+</VoiceMeeterConfig>

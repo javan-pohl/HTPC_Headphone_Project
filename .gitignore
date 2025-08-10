@@ -1,0 +1,187 @@
+# HTPC Project .gitignore
+
+# ==============================================
+# SYSTEM FILES
+# ==============================================
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Linux system files
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ==============================================
+# AUDIO & MEDIA RELATED
+# ==============================================
+
+# Audio test files and temporary recordings
+*.wav
+*.flac
+*.mp3
+*.aac
+*.ogg
+*.wma
+*.aiff
+*.au
+*.raw
+*.pcm
+
+# Video files (if any test videos)
+*.mp4
+*.avi
+*.mkv
+*.mov
+*.wmv
+*.flv
+*.webm
+
+# Audio software temporary files
+*.tmp
+*.temp
+*.cache
+*.log
+
+# VoiceMeeter temp files
+VoiceMeeter*.tmp
+VoiceMeeter*.log
+
+# FlexASIO temporary files
+FlexASIO*.tmp
+FlexASIO*.log
+
+# Audio driver temporary files
+*.dmp
+*.crash
+
+# ==============================================
+# CONFIGURATION BACKUPS
+# ==============================================
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+*.save
+*~
+
+# Auto-generated config backups
+*.config.backup
+*.settings.backup
+*.xml.backup
+*.toml.backup
+
+# ==============================================
+# DEVELOPMENT & TOOLS
+# ==============================================
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.vs/
+
+# Node.js (if any automation scripts)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Python (if any scripts)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.env
+
+# ==============================================
+# PROJECT SPECIFIC
+# ==============================================
+
+# Sensitive configuration files (if any contain passwords/keys)
+# Uncomment if you have files with sensitive data:
+# *.key
+# *.secret
+# credentials.*
+
+# Large binary files that shouldn't be in version control
+*.exe
+*.msi
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+
+# Installation files and drivers
+drivers/
+installers/
+setup_files/
+
+# Measurement and calibration files (often large)
+measurements/
+calibration_data/
+impulse_responses/
+*.ir
+*.fir
+
+# ==============================================
+# DOCUMENTATION EXCLUDES
+# ==============================================
+
+# Generated documentation
+docs/build/
+docs/_build/
+.sphinx/
+
+# ==============================================
+# CUSTOM EXCLUDES
+# ==============================================
+
+# Add any specific files or patterns you want to exclude
+# Example:
+# personal_notes.txt
+# private_config/

@@ -1,0 +1,19 @@
+# FlexASIO Configuration for High-Channel Atmos Setup (7.1.6+ / 9.2.6+)
+# This configures FlexASIO for 24-channel operation (future-proofed)
+
+backend = "Windows DirectSound"
+
+[input]
+channels = 24
+wasapiExclusiveMode = false
+
+[output]
+channels = 24
+wasapiExclusiveMode = false
+
+# Buffer settings for low latency
+bufferSizeSamples = 512
+
+# Sample format
+sampleType = "Float32"
+sampleRate = 48000
